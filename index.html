@@ -29,7 +29,7 @@
     background: var(--white);
     color: var(--dark-grey);
     font-family: var(--font);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     -webkit-font-smoothing: antialiased;
@@ -44,7 +44,7 @@
   /* Type styles from Figma */
   .h3 { font-size: 38px; line-height: 43px; letter-spacing: -1.5px; color: var(--mid-blue); font-weight: 400; }
   .h5 { font-size: 21px; line-height: 26px; letter-spacing: -0.8px; font-weight: 400; }
-  .eyebrow { font-size: 18px; line-height: 24px; font-weight: 300; color: var(--dark-grey); }
+  .eyebrow { font-size: 18px; line-height: 24px; font-weight: 400; color: var(--dark-grey); }
   .btn-type { font-size: 16px; line-height: 31px; letter-spacing: -0.5px; font-weight: 700; }
 
   /* Buttons */
@@ -116,7 +116,7 @@
   .gallery__thumbs img { width: 100%; height: 100%; object-fit: cover; }
 
   .hero__copy { flex: 0 1 682px; display: flex; flex-direction: column; gap: 30px; }
-  .hero__body { max-width: 540px; }
+  .hero__body { max-width: 540px; color: #000; }
   .hero__body p + p { margin-top: 24px; }
   .hero__body .indent { padding-left: 45px; }
 
@@ -127,7 +127,7 @@
   table { width: 100%; border-collapse: collapse; border: 1px solid var(--grey); table-layout: fixed; min-width: 900px; }
   th, td { border-right: 1px solid var(--mid-grey); border-bottom: 1px solid var(--mid-grey); text-align: left; vertical-align: middle; }
   th { background: var(--dark-blue); color: var(--white); padding: 8px 20px; height: 60px; font-size: 16px; line-height: 31px; letter-spacing: -0.5px; font-weight: 700; }
-  td { padding: 20px; color: var(--dark-blue); font-size: 18px; line-height: 24px; font-weight: 300; vertical-align: top; }
+  td { padding: 20px; color: var(--dark-blue); font-size: 18px; line-height: 24px; font-weight: 400; vertical-align: top; }
   tr.alt td { background: var(--light-grey); }
   td .img-cell { display: flex; gap: 4px; align-items: center; }
   td .img-cell img { mix-blend-mode: multiply; }
@@ -150,6 +150,7 @@
   .cards .h3 { margin-bottom: 50px; }
   .cards__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 398px)); gap: 28px; }
   .card { background: var(--light-grey); display: flex; flex-direction: column; }
+  .card__body p { color: #000; }
   .card__body { padding: 50px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
   .card .h5 { color: var(--dark-blue); }
   .card__img { height: 224px; position: relative; overflow: hidden; }
